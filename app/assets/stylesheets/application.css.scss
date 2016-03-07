@@ -1,4 +1,4 @@
-/*@import 'normalize';*/
+@import 'normalize';
 $dark: #424652;
 $white: #FFFFFF;
 $light: #9a9da4;
@@ -164,5 +164,5 @@ input[type="submit"], .button {
     color: $highlight;
   }
 }
-/*@import 'welcome';
-@import 'post_project';*/
+@import 'welcome';
+@import 'posts_projects';
