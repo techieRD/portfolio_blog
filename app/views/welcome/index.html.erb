@@ -1,0 +1,31 @@
+<div class="wrapper wrapper_padding clearfix">
+  <div class="col-1 about homepage_content">
+    <h2>About</h2>
+    <hr>
+    <p>I started college studying computer science to become a software developer, however I took a different path.  Since 2000 I have been an instructional designer, e-learning developer, personal trainer, dietitian and chef.</p><br>
+    <p>But my love for the tech field led me back to the IT work. In October of 2015, I enrolled in the Tech Talent South code immersion bootcamp to learn web app development.</p><br>
+    <p><a href="http://techtalentsouth.com/#services">Tech Talent South</a> reignited my love for coding and now I'm on a mission to find my dream job as a web app front end or back end developer</p>
+  </div>
+  <div class="col-2 homepage_content">
+    <h2>Stuff I've Written</h2>
+    <hr>
+    <% @posts.each do |post| %>
+      <h3><a href="#"><%= link_to post.title, post %></a></h3>
+      <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+    <% end %>
+  </div>
+  <div class="col-3 homepage_content">
+    <h2>Stuff I've built</h2>
+    <hr>
+    <h3><a href="#">Recipe App</a></h3>
+    <p class="date">October 2015</p>
+    <hr>
+    <h3><a href="#">Twitter</a></h3>
+    <p class="date">December 2015</p>
+    <hr>
+    <h3><a href="#">Music DB</a></h3>
+    <p class="date">January 2016</p>
+  </div>
+  <div class="col-3 homepage_content">
+  </div>
+</div>

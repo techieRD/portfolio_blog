@@ -14,16 +14,26 @@
 <body>
 
 <header id="main_navigation" class="clearfix">
-  <a href="#" class="name">Angie Gardi</a>
+  <%= link_to "Angie Gardi", root_path, class: "name" %>
   <nav>
     <%= link_to "Articles", posts_path %>
-    <a href="articles.html">Articles</a>
     <a href="#">Projects</a>
     <a href="contact.html">Contact</a>   
   </nav>
 </header>
 
 <%= yield %>
+
+<footer id="main_footer">
+  <p class="copyright">
+   &copy; 2016 Angie Gardi 
+  </p>
+  <nav>
+    <a href="http://twitter.com/strongshape" target="_blank"><i class="fa fa-twitter-square"></i></a>
+    <a href="https://www.linkedin.com/in/angiegardi" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+    <a href="http://github.com/techieRD" target="_blank"><i class="fa fa-github-square"></i></a>
+  </nav>
+</footer>
 
 </body>
 </html>
