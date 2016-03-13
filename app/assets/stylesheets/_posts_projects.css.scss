@@ -1,6 +1,6 @@
 #posts_wrapper {
   padding: 3em 0;
-  .post {
+  .post, .project {
     text-align: center;
     .date {
       font-size: .9em;
@@ -46,7 +46,7 @@
 
 /* article show page */
 
-#post_show_content {
+#post_show_content, #project_show_content {
   header {
     text-align: center;
     .date {
